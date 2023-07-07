@@ -309,7 +309,7 @@ void TProtonPair::TestDetectorPair(map<unsigned int, RP_struct_type>::iterator i
     {
     
       double pert_alpha_rad = 0.0e-2 ;
-      double pert_a_mm = 0.0 ;
+      double pert_a_mm = 2.0 ;
       double pert_b_mm = 0.0 ;
 
       double pert_hor_x = 0.0 ;
@@ -511,7 +511,10 @@ void test_aperture(vector<TAperture *> &vector_apertures)
   map_of_THorizontal_and_vertical_xy_histogram["123_125_corr_y_dy"] = new TH2D("123_125_corr_y_dy", "123_125_corr_y_dy", 100, -20, 20,  100, -0.2, 0.2) ;
 
 	// for(int i = 0 ; i < 1e6 ; ++i)
-	for(int i = 0 ; i < 16e4 ; ++i)
+	
+	int factor = (8600 / 3) ;
+	
+	for(int i = 0 ; i < (16e4 / factor) ; ++i)
 	{
     TProtonPair pp ;
    
