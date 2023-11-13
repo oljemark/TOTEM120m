@@ -23,6 +23,9 @@
 <update_parameter> MaxNumberOfEventsToAnalyzeIsSet			0.0
 <update_parameter> MaxNumberOfEventsToAnalyze				60000
 
+<update_parameter>             DoNotSaveEpsFiles                                               0.0
+<parameter>                    WriteEverything                                                 0.0
+
 <update_setting>	Input_directory			root://eostotem.cern.ch//eos/cms/store/group/phys_diffraction/fnemes/E_CM_900_GeV/Beta_star_11_m/Reduced_ntuples/7302/
 
 <comment> <setting>			Output_directory		/afs/cern.ch/work/f/fnemes/tmp/pp/E_CM_900_GeV_beta_star_11_m/Analysis_output_files/7302/Diagonals/DIAGONAL_LEFT_BOTTOM_RIGHT_TOP/All_root_files_to_define_cuts_aligned_first_optics_test/
