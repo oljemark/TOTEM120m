@@ -1,6 +1,0 @@
-<use name="root"/>
-<Flags CXXFLAGS="-ggdb"/>
-<export>
-  <lib name="1"/>
-</export>
-
