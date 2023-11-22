@@ -1,0 +1,54 @@
+
+	<parameter> MaxNumberOfEventsToAnalyzeIsSet			0.0
+	<parameter> MaxNumberOfEventsToAnalyze				10000
+
+	<parameter>	SaveReducedBinaryDataset				0.0
+	<parameter>	SaveRuns								0.0
+	<parameter>	CollectCutDiagnosticData				1.0
+
+	<setting>	project_task							analyze
+
+	<setting>	MADX_label_of_left_near_RP_detector		XRPV.D6L5.B2
+	<setting>	MADX_label_of_left_far_RP_detector		XRPV.B6L5.B2
+
+	<setting>	MADX_label_of_right_near_RP_detector	        XRPV.D6R5.B1
+	<setting>	MADX_label_of_right_far_RP_detector		XRPV.B6R5.B1
+
+	<parameter>	NearFarRPUnitsDistanceM					7
+
+	<setting>	MAD_X_twiss_beam_1						Projects/2024/E_CM_13600_GeV_beta_star_120_m/General_settings/Optics/LHC_nominal/Beam_1/opticsproject.tfs
+	<setting>	MAD_X_twiss_beam_2						Projects/2024/E_CM_13600_GeV_beta_star_120_m/General_settings/Optics/LHC_nominal/Beam_2/opticsproject.tfs
+
+	<setting>	Log_file_name							AnalyzeDsigmaOverDt.log
+
+<section> ==================== Acceptance settings
+
+	<parameter>		analytical_acceptance_calculation			1.0
+	<parameter>		vertical_RP_position_beam_sigma				10.0
+
+	<setting>		label_of_vertical_beam_divergence_plot		P0037_PlotsCollection_theta_y_star_left_rad_theta_y_star_right_rad_define_cut
+
+<section> ==================== Trigger settings
+
+	<setting>	required_trigger_bit_name				RP220_V
+
+	<parameter> Ask_for_trigger 						0.0
+	<parameter>	Ask_for_trigger_data_bunch_num			0.0
+
+<section> ==================== Luminosity settings
+
+	<parameter>		Ask_for_CMS_luminosity_calculations	0.0
+
+<section> ==================== Non-exponential part settings
+
+	<begin>	Exponential_part_settings
+		<parameter>	lower_abs_t_boundary_of_fit_GeV2		0.012
+		<parameter>	upper_abs_t_boundary_of_fit_GeV2		0.2
+		<parameter>	relative_delta_sigma_per_delta_t_range	0.06
+	<end>	Exponential_part_settings
+
+
+	<parameter>	pile_up_inefficiency_correction_percent		0.0
+
+	<parameter>		DoNotSaveEpsFiles						0.0
+
